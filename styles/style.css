@@ -1,0 +1,190 @@
+* {
+    background-color: #F3F5FC;
+    font-family: 'inter', sans-serif;
+    font-weight: 400;
+    line-height: 150%;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 50%; /* Reducimos el tamaño del logo en pantallas pequeñas */
+    max-width: 150px; /* Tamaño máximo del logo */
+    margin: 0 auto; /* Centramos el logo */
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    padding: 20px; /* Añadimos padding para separación */
+}
+
+
+
+/*
+
+.copiar {
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 108px;
+    margin-top: 482px;
+    position: absolute;
+    width: 336px;
+    font-size: 32px;
+} */
+
+section {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Permite que las secciones ocupen espacio equitativamente */
+    margin: 10px; /* Añadimos margen para separación */
+}
+
+.text-area {
+    width: 100%; /* Ajustamos el ancho al 100% del contenedor padre */
+    font-size: 1.5rem; /* Ajustamos el tamaño de fuente en unidades relativas */
+    color: #0A3871;
+    text-transform: lowercase;
+    border: none;
+    padding: 5px;
+}
+::placeholder { color: #0A3871; }
+    .text-area:focus {
+        outline: none;
+    }
+
+.mensaje {
+    width: 85%; /* Ajustamos el ancho al 100% del contenedor padre */
+    height: 75%;
+    margin: 0; /* Eliminamos márgenes para un mejor ajuste */
+    font-size: 1.5rem; /* Ajustamos el tamaño de fuente en unidades relativas */
+    background-color: white;
+    background-image: url("/images/Muñeco.png");
+    background-repeat: no-repeat;
+    background-position: center; /* Centramos la imagen de fondo*/
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 100px;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+.mensaje:focus {
+    outline: none;
+}
+
+.botones {
+    display: flex;
+    margin-top: 20px; /* Ajustamos el margen superior */
+    margin-bottom: 15px;
+}
+
+.btn-encriptar {
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 60%;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.btn-desencriptar {
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 60%;
+    font-size: 1.5rem;
+}
+
+.presentacion-boton-copiar {
+    display: flex;
+    margin-top: 20px; /* Ajustamos el margen superior */
+    justify-content: center;
+    margin-left: 100px
+}
+
+.btn-copiar {
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    /*margin-left: 108px;*/
+    /*margin-top: 482px;*/
+    /*position: absolute;*/
+    width: 60%;
+    font-size: 1.5rem;
+}
+
+.sugerencia {
+    padding: auto;
+}
+
+.informacion {
+    color: #495057;
+    font-size: 18px;
+}
+
+.header, .footer {
+    text-align: center; /* Centramos el texto */
+    padding: 10px; /* Añadimos padding para separación */
+}
+
+.footer p {
+    margin: 5px 0; /* Reducimos el margen en el footer */
+}
+
+p {
+    margin: 8px;
+}
+
+/* Ajustes Responsive */
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column; /* Cambia la dirección de los elementos a columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+
+    section {
+        width: 100%; /* Asegura que las secciones ocupen el 100% del ancho disponible */
+        margin: 0; /* Eliminamos el margen en pantallas pequeñas */
+        justify-content: center;
+        align-content: center;
+    }
+
+    .mensaje {
+       width: 100%;
+    }
+
+    .botones {
+        flex-direction: row; /* Cambia la dirección de los botones a fila en pantallas pequeñas */
+        justify-content: center;
+    }
+
+    .btn-encriptar, .btn-desencriptar, .copiar {
+        width: auto; /* Ajusta el ancho de los botones en pantallas pequeñas */
+        margin-bottom: 0; /* Eliminamos el margen inferior para alineación horizontal */
+    }
+
+    .presentacion-boton-copiar {
+        margin-left: 0%;
+    }
+    
+    .mensaje {
+        margin-left: 0%;
+
+   }
+}
+
+
